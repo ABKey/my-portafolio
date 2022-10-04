@@ -1,0 +1,99 @@
+.center {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.centerText {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: left;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+
+
+html, body {
+  align-items: center;
+  color: #EDF2F4;
+  font-family: Helvetica Neue, Helvetica, Arial sans-serif;
+  background-color: #2A3445;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    color: #EDF2F4;
+    font-family: Helvetica Neue, Helvetica, Arial sans-serif;
+}
+
+p {
+  padding: 0 10px;
+  text-align: justify;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+a {
+  color: #C17C74;
+  text-decoration: none;
+}
+a:focus, a:hover {
+  text-decoration: underline;
+}
+
+/*Stuff I gotta figure out*/
+hr {
+  display: block;
+  margin: 50px 0 -15px;
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #DDC9B4;
+}
+hr + h2 {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  margin: 0;
+  padding: 5px 10px;
+  border: 1px solid #DDC9B4;
+  transform: translateX(-50%);
+  color: #DDC9B4;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #2A3445;
+}
+hr + h2::first-letter {
+  margin-left: 0.32em;
+}
+
+/* Alternative transform: translate */
+hr + h2 {
+  border-width: 1px 0;
+}
+hr + h2::before, hr + h2::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #DDC9B4;
+  content: "";
+}
+hr + h2::before {
+  left: 0;
+}
+hr + h2::after {
+  right: 0;
+}
+
